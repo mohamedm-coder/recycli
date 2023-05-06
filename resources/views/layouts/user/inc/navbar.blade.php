@@ -40,16 +40,16 @@
             <span class="count"></span>
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
-            <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+            <p class="mb-0 font-weight-normal float-left dropdown-header">رسائل</p>
             <a class="dropdown-item">
               <div class="item-thumbnail">
                   <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
               </div>
               <div class="item-content flex-grow">
-                <h6 class="ellipsis font-weight-normal">David Grey
+                <h6 class="ellipsis font-weight-normal">رسكلة
                 </h6>
                 <p class="font-weight-light small-text text-muted mb-0">
-                  The meeting is cancelled
+                  مواد جديدو من زجاج
                 </p>
               </div>
             </a>
@@ -58,11 +58,10 @@
                   <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
               </div>
               <div class="item-content flex-grow">
-                <h6 class="ellipsis font-weight-normal">Tim Cook
+                <h6 class="ellipsis font-weight-normal">محمد
                 </h6>
                 <p class="font-weight-light small-text text-muted mb-0">
-                  New product launch
-                </p>
+              تم اضافة مواد جديدة
               </div>
             </a>
             <a class="dropdown-item">
@@ -70,10 +69,10 @@
                   <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
               </div>
               <div class="item-content flex-grow">
-                <h6 class="ellipsis font-weight-normal"> Johnson
+                <h6 class="ellipsis font-weight-normal"> زائر
                 </h6>
                 <p class="font-weight-light small-text text-muted mb-0">
-                  Upcoming board meeting
+                  رسالة
                 </p>
               </div>
             </a>
@@ -85,7 +84,7 @@
             <span class="count"></span>
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
-            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+            <p class="mb-0 font-weight-normal float-left dropdown-header">اشعارات</p>
             <a class="dropdown-item">
               <div class="item-thumbnail">
                 <div class="item-icon bg-success">
@@ -93,9 +92,9 @@
                 </div>
               </div>
               <div class="item-content">
-                <h6 class="font-weight-normal">Application Error</h6>
+                <h6 class="font-weight-normal"> لديك طلب على موادك</h6>
                 <p class="font-weight-light small-text mb-0 text-muted">
-                  Just now
+                  الان فقط
                 </p>
               </div>
             </a>
@@ -108,7 +107,7 @@
               <div class="item-content">
                 <h6 class="font-weight-normal">Settings</h6>
                 <p class="font-weight-light small-text mb-0 text-muted">
-                  Private message
+                  اشعارات جديدة
                 </p>
               </div>
             </a>
@@ -119,9 +118,9 @@
                 </div>
               </div>
               <div class="item-content">
-                <h6 class="font-weight-normal">New user registration</h6>
+                <h6 class="font-weight-normal">تم اضافة مواد جديدة</h6>
                 <p class="font-weight-light small-text mb-0 text-muted">
-                  2 days ago
+                  منذ حوالي ساعة
                 </p>
               </div>
             </a>
@@ -129,33 +128,32 @@
         </li>
         <li class="nav-item nav-profile dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
-            <img src="" alt="profile"/>
+            <img src="images/faces/face4.jpg" alt="profile"/>
             <span class="nav-profile-name">   {{ Auth::user()->name }}</span>
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-            <a class="dropdown-item">
-              <i class="mdi mdi-settings text-primary"></i>
-              Settings
-            </a>
+            
      
-            <li class="nav-item dropdown">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }}
-                </a>
+          
 
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
                     
-                            
-                            <i class="mdi mdi-logout text-primary"></i> {{ __('Logout') }}
-                    </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
                     </form>
                 </div>
+                <a class="dropdown-item">
+                  <i class="mdi mdi-settings text-primary"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                    
+                            
+                            <i class="mdi mdi-logout text-primary"></i> تسجيل الخروج
+                    </a>
             </li>
           </div>
         </li>

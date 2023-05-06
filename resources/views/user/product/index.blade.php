@@ -4,9 +4,9 @@
     <div class="col-md-12"> 
         <div class="card"> 
             <div class="card-header"> 
-                <h4> categories</h4>
+                <h4>  مواد</h4>
             
-                  <a href="product/sell" class="btn btn-primary btn-sm float-end" >add categorie</a>
+                  <a href="product/sell" class="btn btn-primary btn-sm float-end" >اضافة</a>
             
                 </div>
                 <div class="card-body">

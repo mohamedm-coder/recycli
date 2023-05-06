@@ -2,6 +2,7 @@
 @section("title","رسكلي")
 @section('content')
 
+   
        
     <!-- Modal -->
      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -76,29 +77,51 @@
      <div class="container px-5 my-5">
          <div class="row gx-5">
              <div class="col-lg-4 mb-5 mb-lg-0">
-                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                    <i class="bi bi-collection"></i>
+                  
+                </div>
                  <h2 class="h4 fw-bolder">المواد القابلة للرسكلة</h2>
-                 <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                 <p>
+                   
+ 
+                    لورق والكرتون تشمل المواد القابلة للرسكلة مجموعة واسعة من المواد التي يمكن إعادة تدويرها واستخدامها مرة أخرى بدلاً من التخلص منها في النفايات. وتشمل هذه المواد الورق و الكرتون البلاستيك: 
+                    المعادن
+                    الملابس
+                    الأخشاب
+
+</p>
                  <a class="text-decoration-none" href="#!">
-                     Call to action
+                     اضغط للمزيد
                      <i class="bi bi-arrow-right"></i>
                  </a>
              </div>
              <div class="col-lg-4 mb-5 mb-lg-0">
                  <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
                  <h2 class="h4 fw-bolder">اهمية الرسكلة</h2>
-                 <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                 <p>1- حماية البيئة
+
+                    2-توفير الموارد الطبيعية
+                    
+                    3- تقليل تكاليف النفايات.</p>
                  <a class="text-decoration-none" href="#!">
-                     Call to action
+                     اضغط للمزيد
                      <i class="bi bi-arrow-right"></i>
                  </a>
              </div>
              <div class="col-lg-4">
                  <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                  <h2 class="h4 fw-bolder">خطوات الرسكلة</h2>
-                 <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                 <p>
+                   
+                 1- جمع المواد القابلة للرسكلة
+
+                    2-الفرز
+                    
+                    3- المعالجة
+</p>
                  <a class="text-decoration-none" href="#!">
-                     Call to action
+                  اضغط للمزيد
                      <i class="bi bi-arrow-right"></i>
                  </a>
              </div>
@@ -119,41 +142,39 @@
                      <div class="card-body p-5">
                          <div class="small text-uppercase fw-bold text-muted">خطة 1</div>
                          <div class="mb-3">
-                             <span class="display-4 fw-bold">$0</span>
-                             <span class="text-muted">/ mo.</span>
+                             <span class="display-4 fw-bold">بيع</span>
+                             <span class="display-4 fw-bold">شراء</span>
+                             <span class="text-muted">/  مواد الرسكلة</span>
                          </div>
                          <ul class="list-unstyled mb-4">
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 <strong>1 users</strong>
+                                 <strong>تسجيل حساب</strong>
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 5GB storage
+                                 تسجيل الدخول لحسابك
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Unlimited public projects
+                                 مشاهدة عروض البيع 
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Community access
+                                 امكانية البيع 
                              </li>
-                             <li class="mb-2 text-muted">
-                                 <i class="bi bi-x"></i>
-                                 Unlimited private projects
+                             <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                 امكانية نقل مواد
                              </li>
-                             <li class="mb-2 text-muted">
-                                 <i class="bi bi-x"></i>
-                                 Dedicated support
+                             <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                امكانية شراء بعض المواد
                              </li>
-                             <li class="mb-2 text-muted">
-                                 <i class="bi bi-x"></i>
-                                 Free linked domain
-                             </li>
-                             <li class="text-muted">
-                                 <i class="bi bi-x"></i>
-                                 Monthly status reports
+                      
+                             <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                         حساب مجاني
                              </li>
                          </ul>
                          <div class="d-grid"><a class="btn btn-outline-primary" href="#!">اختر الخطة</a></div>
@@ -170,44 +191,37 @@
                              Pro
                          </div>
                          <div class="mb-3">
-                             <span class="display-4 fw-bold">$9</span>
-                             <span class="text-muted">/ mo.</span>
+                             <span class="display-4 fw-bold">الابلاغ عن موقع مليئ بالنفايات</span>
+                             <span class="text-muted">/ </span>
                          </div>
                          <ul class="list-unstyled mb-4">
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 <strong>5 users</strong>
+                                 <strong>تسجيل حساب</strong>
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 5GB storage
+                                تسجيل الدخول
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Unlimited public projects
+                           اختيار الابلاغ  عن موقع
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Community access
+                         اختيار الموقع من الخريطة
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Unlimited private projects
+                              تصوير صورة
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Dedicated support
+                                 الابلاغ
                              </li>
-                             <li class="mb-2">
-                                 <i class="bi bi-check text-primary"></i>
-                                 Free linked domain
-                             </li>
-                             <li class="text-muted">
-                                 <i class="bi bi-x"></i>
-                                 Monthly status reports
-                             </li>
+                            
                          </ul>
-                         <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
+                         <div class="d-grid"><a class="btn btn-primary" href="#!">اختيار الخطة</a></div>
                      </div>
                  </div>
              </div>
@@ -215,47 +229,37 @@
              <div class="col-lg-6 col-xl-4">
                  <div class="card">
                      <div class="card-body p-5">
-                         <div class="small text-uppercase fw-bold text-muted">Enterprise</div>
+                         <div class="small text-uppercase fw-bold text-muted">خدمات النقل</div>
                          <div class="mb-3">
-                             <span class="display-4 fw-bold">$49</span>
-                             <span class="text-muted">/ mo.</span>
+                             <span class="display-4 fw-bold">نقل الموارد</span>
+                             <span class="text-muted">/ </span>
                          </div>
                          <ul class="list-unstyled mb-4">
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 <strong>Unlimited users</strong>
+                                 <strong>تسجيل حساب</strong>
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 5GB storage
+                                 تسجيل الدخول
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Unlimited public projects
+                                 اختر خدمات النقل
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Community access
+اختيار وسيلة نقل                             </li>
+                             <li class="mb-2">
+                                 <i class="bi bi-check text-primary"></i>
+                            الدفع
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 Unlimited private projects
+                           هنيئا لك
                              </li>
-                             <li class="mb-2">
-                                 <i class="bi bi-check text-primary"></i>
-                                 Dedicated support
-                             </li>
-                             <li class="mb-2">
-                                 <i class="bi bi-check text-primary"></i>
-                                 <strong>Unlimited</strong>
-                                 linked domains
-                             </li>
-                             <li class="text-muted">
-                                 <i class="bi bi-check text-primary"></i>
-                                 Monthly status reports
-                             </li>
-                         </ul>
-                         <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+                            
+                         <div class="d-grid"><a class="btn btn-outline-primary" href="#!">اختر خطة</a></div>
                      </div>
                  </div>
              </div>
@@ -277,7 +281,7 @@
                          <div class="d-flex">
                              <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
                              <div class="ms-4">
-                                 <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                                 <p class="mb-1">شكرًا لك على تقديم منتج رائع بهذا الشكل. لقد أحببنا العمل معك ومع الفريق بأكمله ، وسنوصي بك للآخرين!</p>
                                  <div class="small text-muted">- Client Name, Location</div>
                              </div>
                          </div>
@@ -289,7 +293,7 @@
                          <div class="d-flex">
                              <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
                              <div class="ms-4">
-                                 <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
+                                 <p class="mb-1">الفريق بأكمله كان مساعدة كبيرة في تجميع الأمور لشركتنا وعلامتنا التجارية</p>
                                  <div class="small text-muted">- Client Name, Location</div>
                              </div>
                          </div>
@@ -332,7 +336,7 @@
                      </div>
                      <!-- Phone number input-->
                      <div class="form-floating mb-3">
-                         <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                         <input class="form-control" id="phone" type="tel" placeholder="(213) 666843230" data-sb-validations="required" />
                          <label for="phone">رقم الهاتف</label>
                          <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                      </div>
@@ -348,10 +352,10 @@
                      <!-- has successfully submitted-->
                      <div class="d-none" id="submitSuccessMessage">
                          <div class="text-center mb-3">
-                             <div class="fw-bolder">Form submission successful!</div>
-                             To activate this form, sign up at
+                             <div class="fw-bolder">تم  رسكلي تشكرك</div>
+                             
                              <br />
-                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                             <a href="https://startbootstrap.com/solution/contact-forms">RECYCLII.COM</a>
                          </div>
                      </div>
                      <!-- Submit error message-->
@@ -483,7 +487,7 @@
 <!-- Copyright -->
 <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
 © 2023 Copyright:
-<a class="text-reset fw-bold" href="">Recycli.com</a>
+<a class="text-reset fw-bold" href="http://recyclii.herokuapp.com/">http://recyclii.herokuapp.com/</a>
 </div>
 <!-- Copyright -->
 </footer>
