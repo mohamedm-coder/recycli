@@ -398,7 +398,7 @@
  <a href="" class="me-4 text-reset">
    <i class="fab fa-linkedin"></i>
  </a>
- <a href="" class="me-4 text-reset">
+ <a href="https://github.com/mido-coder" class="me-4 text-reset">
    <i class="fab fa-github"></i>
  </a>
 </div>

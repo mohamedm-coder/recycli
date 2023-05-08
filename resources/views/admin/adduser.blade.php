@@ -6,13 +6,13 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">add user</div>
+                <div class="card-header">اضافة مستخدم</div>
 
                 <div class="card-body">
 <form action="{{url('admin/addusers')}}" method="POST">
     @csrf
     <div class="row mb-3">
-        <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+        <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('الاسم الكامل') }}</label>
 
         <div class="col-md-6">
             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" required autocomplete="current-name">
@@ -26,7 +26,7 @@
     </div>
 
 <div class="row mb-3">
-    <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+    <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('الايمايل') }}</label>
 
     <div class="col-md-6">
         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -39,7 +39,7 @@
     </div>
 </div>
 <div class="row mb-3">
-    <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+    <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('كلمة السر') }}</label>
 
     <div class="col-md-6">
         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">

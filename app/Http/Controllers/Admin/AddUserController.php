@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\google;
+use App\Models\don;
 
 class AddUserController extends Controller
 {
@@ -20,4 +22,16 @@ class AddUserController extends Controller
         $data->save();
         return redirect()->back();
     }
+    public function loc()
+    {
+            $data=google::all();
+            return view('admin.location',['googles'=>$data]);
+        
+           }
+           public function led()
+    {
+            $data=don::all();
+            return view('admin.leddon',['dons'=>$data]);
+        
+           }
 }

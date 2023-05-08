@@ -2,12 +2,10 @@
     <div class="navbar-brand-wrapper d-flex justify-content-center">
       <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
         <a class="navbar-brand brand-logo" href="index.html">
-            {{--<img src="images/logo.svg" alt="logo"/></a>--}}
+         
             Recycli
-        <a class="navbar-brand brand-logo-mini" href="index.html">
-           <img src="images/logo-mini.svg" alt="logo"/>
-           
         </a>
+       
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="mdi mdi-sort-variant"></span>
         </button>
@@ -25,7 +23,7 @@
               </span>
             </div>
             
-              <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search"   name="search"
+              <input type="text" class="form-control" placeholder="البحث" aria-label="search" aria-describedby="search"   name="search"
               value="{{ request('search') }}">
             
           </div>
@@ -105,7 +103,7 @@
                 </div>
               </div>
               <div class="item-content">
-                <h6 class="font-weight-normal">Settings</h6>
+                <h6 class="font-weight-normal">اعدادات</h6>
                 <p class="font-weight-light small-text mb-0 text-muted">
                   اشعارات جديدة
                 </p>
@@ -145,7 +143,7 @@
                 </div>
                 <a class="dropdown-item">
                   <i class="mdi mdi-settings text-primary"></i>
-                  Settings
+                  اعدادات
                 </a>
                 <a class="dropdown-item" href="{{ route('logout') }}"
                        onclick="event.preventDefault();

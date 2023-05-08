@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDonsTable extends Migration
+class CreateGensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateDonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('dons', function (Blueprint $table) {
+        Schema::create('gens', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('phone');
+            $table->string('address');
+            $table->string('location');
             $table->string('photo',300);
-            $table->string('prix');
-            $table->string('description');
         });
     }
 
@@ -29,6 +30,6 @@ class CreateDonsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dons');
+        Schema::dropIfExists('gens');
     }
 }

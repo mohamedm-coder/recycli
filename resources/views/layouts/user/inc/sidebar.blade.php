@@ -39,7 +39,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{url('user/map')}}">
+        <a class="nav-link" href="{{url('user/google')}}">
           <i class="mdi mdi-chart-pie menu-icon"></i>
           <span class="menu-title">الابلاغ عن موقع مليئ بالنفايات</span>
         </a>

@@ -19,8 +19,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/page', [App\Http\Controllers\PageController::class, 'index'])->name('page');
 
-Route::get('/client', [App\Http\Controllers\ClientController::class, 'index']);
-Route::get('/google-autocomplete', [App\Http\Controllers\ClientController::class, 'google']);
+
   
 
  
@@ -40,6 +39,8 @@ Route::prefix('admin')->middleware(['auth','isAdmin']) ->group(function() {
     Route::get('addtransporter',[App\Http\Controllers\Admin\TransporterController::class,'index']);
     Route::post('addtransporters',[App\Http\Controllers\Admin\TransporterController::class,'transporters']);
     Route::get('dash',[App\Http\Controllers\User\DashController::class,'index']);
+    Route::get('loc',[App\Http\Controllers\Admin\AddUserController::class,'loc']);
+    Route::get('leddon',[App\Http\Controllers\Admin\AddUserController::class,'led']);
    
    
 
@@ -60,9 +61,10 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::get('addvehicule',[App\Http\Controllers\User\AddVehiculeController::class,'index']);
     Route::get('doni',[App\Http\Controllers\User\DonController::class,'doni']);
     Route::get('map',[App\Http\Controllers\User\MapController::class,'index']);
-
     Route::get('don',[App\Http\Controllers\User\DonController::class,'don']);
     Route::post('dons',[App\Http\Controllers\User\DonController::class,'dons']);
+    Route::get('google', [App\Http\Controllers\User\LocationController::class, 'google']);
+    Route::post('gen', [App\Http\Controllers\User\LocationController::class, 'gen']);
 
 
 
