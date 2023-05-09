@@ -4,9 +4,9 @@
     <div class="col-md-12"> 
         <div class="card"> 
             <div class="card-header"> 
-                <h4> add categorie</h4>
+                <h4> اضافة</h4>
             
-                <a href="{{url('')}}" class="btn btn-primary btn-sm texte white float-end" > back</a>
+                <a href="{{url('')}}" class="btn btn-primary btn-sm texte white float-end" > رجوع</a>
             
                 </div>
                 <div class="card-body">
@@ -17,18 +17,18 @@
                      
                     
                         <div class="mb-3">
-                            <label> name</label>
+                            <label> اسم</label>
                             <input type="text" name="name" class="form-control">
 
 
                         </div>
                        
                         <div class="mb-3">
-                            <label> matricule</label>
+                            <label> رقم السيارة</label>
                             <input type="text" name="matricule" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label> photo</label>
+                            <label> صورة</label>
                             <input type="file" name="photo" class="form-control">
                         </div>
                        
@@ -36,7 +36,7 @@
                     
                         
                         <div class="col-md-12  mb-3">
-                            <button type="submit" > add</button>
+                            <button type="submit" > اضافة</button>
                         </div>   
 
 

@@ -6,7 +6,7 @@
             <div class="card-header"> 
                 <h4> وسائل النقل</h4>
             
-                  <a href="vehicule/adds" class="btn btn-primary btn-sm float-end" >اضافة وسيلة نقل</a>
+                  <a href="adds" class="btn btn-primary btn-sm float-end" >اضافة وسيلة نقل</a>
             
                 </div>
                 <div class="card-body">

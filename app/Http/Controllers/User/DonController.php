@@ -31,7 +31,7 @@ class DonController extends Controller
         $requestData=$request->all();
         $fileName=time().$request->file('photo')->getClientOriginalName();
         $path=$request->file('photo')->storeAs('images',$fileName,'public');
-        $requestData['photo']= '/storage/'.$path;
+        $requestData['photo']=  '/storage/'.$path;
         don::create($requestData);
  
         

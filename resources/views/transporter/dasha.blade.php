@@ -1,7 +1,7 @@
 @extends('layouts.transporter')
 @section('content')
 <div>
-  <h4>welcome Transporter</h4>
+  <h4>مرحبا بك </h4>
 </div>
 
 @endsection
