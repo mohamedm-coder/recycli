@@ -15,7 +15,8 @@
         "laravel/ui": "^3.4",
         "league/omnipay": "^3.2",
         "livewire/livewire": "^2.12",
-        "omnipay/paypal": "^3.0"
+        "omnipay/paypal": "^3.0",
+        "twbs/bootstrap-icons": "^1.10"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -75,4 +76,3 @@
     
     
 }
-
