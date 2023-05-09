@@ -56,18 +56,42 @@
             </div>
         </header>
     </div>
+ 
+        <div class="item">
+            <header class=" py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="mh-100" style="width: 90%; height: 425px; ">
+                            <img src="https://media.istockphoto.com/id/1371302120/photo/recyclage-du-verre.jpg?s=612x612&w=0&k=20&c=QTP-BCleuGdvtPuWLmyEtkQK2ZW41n4J0Ajo1nxdg4U="  /> 
+                          
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="item">
+            <header class=" py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="mh-200" style="width: 90%; height:425px; ">
+                            <img src="https://media.istockphoto.com/id/1132945386/photo/recycled.jpg?s=612x612&w=0&k=20&c=lPus1WUYBZ_NiTsI4GqkpDeRKoS7Wd_SxwBwLTKJ878="  /> 
+                          
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    
     
 
- {{--<div class="container px-5"> 
+   {{--<div class="w-75 p-3" > 
 
-    <img src="admin/images/th.jpg" class="img-fluid" alt="Responsive image" /> 
-   
+    <img src="
  </div>
 
   
-
- <div class="container px-5"> 
-    <img src="admin/images/p.jpg" class="img-fluid" alt="Responsive image" />
+<div class="text-center">
+    <img src="" class="img-fluid" alt="Responsive image" />
 
   
  </div>--}}
