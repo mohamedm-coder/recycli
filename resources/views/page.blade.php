@@ -121,7 +121,7 @@
                  </a>
              </div>
              <div class="col-lg-4 mb-5 mb-lg-0">
-                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"> </i></div>
                  <h2 class="h4 fw-bolder">اهمية الرسكلة</h2>
                  <p>1- حماية البيئة
 

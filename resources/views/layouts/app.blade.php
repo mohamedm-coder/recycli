@@ -34,8 +34,8 @@
               
                 <a class="navbar-brand" href="#!">رسكلي</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="image-container">
-                     {{--<img src=	"admin/images/Pre-ConvertImage (1).ico" alt="Description of your image"> --}}
+                {{--<div class="image-container">--}} <div class="feature bg-success bg-gradient text-white rounded-3 mb-3">
+                  
                      <i class="bi bi-recycle"></i>
                      
              
@@ -47,7 +47,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contacts">اتصل بنا</a></li>
                         <li class="nav-item"><a class="nav-link" href="#adamat">خدماتنا</a></li>
                     
-                        <li class="nav-item"><a href="{{ route('register') }}" class="btn btn-primary me-2">التسجيل</a></li>
+                        <li class="nav-item"><a href="{{ route('register') }}" class="btn btn-primary mx-2">التسجيل</a></li>
                         <li class="nav-item"><a href="{{ route('login') }}" class="btn btn-success mx-2">تسجيل الدخول</a></li>
                     
                         
