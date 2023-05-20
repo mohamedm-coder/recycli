@@ -16,26 +16,65 @@
                        
                      
                     
-                        <div class="mb-3">
-                            <label> الاسم</label>
-                            <input type="text" name="name" class="form-control">
+                        <div class="row mb-3">
+                            <label for="name" >{{ __('اسم') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="name" type="text" class="form-control @error('email') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="name" >{{ __('وصف') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
+
+                                @error('description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="name" >{{ __('صورة') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="photo" type="file" class="form-control @error('photo') is-invalid @enderror" name="photo" value="{{ old('photo') }}" required autocomplete="photo" autofocus>
+
+                                @error('photo')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
 
 
+
+
+
+
+                        <div class="row mb-3">
+                            <label for="prix" >{{ __('السعر') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="prix" type="text" class="form-control @error('prix') is-invalid @enderror" name="prix" value="{{ old('prix') }}" required autocomplete="prix" autofocus>
+
+                                @error('prix')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
                         </div>
                        
-                        <div class="mb-3">
-                            <label> الوصف</label>
-                            <input type="description" name="description" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label> صورة</label>
-                            <input type="file" name="photo" class="form-control">
-                        </div>
-                       
-                        <div class="mb-3">
-                            <label> السعر </label>
-                            <input type="text" name="prix" class="form-control">
-                        </div>
                     
                         
                         <div class="col-md-12  mb-3">

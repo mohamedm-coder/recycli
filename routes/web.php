@@ -41,6 +41,10 @@ Route::prefix('admin')->middleware(['auth','isAdmin']) ->group(function() {
     Route::get('dash',[App\Http\Controllers\User\DashController::class,'index']);
     Route::get('loc',[App\Http\Controllers\Admin\AddUserController::class,'loc']);
     Route::get('leddon',[App\Http\Controllers\Admin\AddUserController::class,'led']);
+    Route::get('delete/{id}',[App\Http\Controllers\Admin\AddUserController::class,'delete']);
+    Route::get('delete/{id}',[App\Http\Controllers\User\ListController::class,'delete']);
+    Route::get('product',[App\Http\Controllers\Admin\AddUserController::class,'pro']);
+ 
    
    
 

@@ -4,12 +4,12 @@
 
 
 <div>
-<h4>شكرا لك نحن نقدر لك ذلك </h4>
+<h4>المواد التي اضافها المستخدمون</h4>
 </div>
 <div class="row">
 <div class="row">
  
-      @foreach ($dons as $pro)
+      @foreach ($products as $pro)
   <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
     <div class="card w-100 my-2 shadow-2-strong">
       <img src="{{asset($pro->photo)}}" class="card-img-top" style="aspect-ratio: 1 / 1" />

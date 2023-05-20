@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\google;
 use App\Models\don;
+use App\Models\product;
 
 class AddUserController extends Controller
 {
@@ -34,4 +35,20 @@ class AddUserController extends Controller
             return view('admin.leddon',['dons'=>$data]);
         
            }
+           
+           public function pro()
+           {
+                   $data=product::all();
+                   return view('admin.product',['products'=>$data]);
+               
+                  }
+                  public function delete($id){
+                    $data=don::find($id);
+                    $data->delete();
+                    return redirect('admin/leddon');
+                
+                   }
+                 
+           
+           
 }

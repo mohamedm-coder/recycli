@@ -12,25 +12,53 @@
                 <div class="card-body">
                     <form action= "{{url('user/dons')}}"  method="POST" enctype="multipart/form-data"   >
                         @csrf
-                        
+                         <div class="row mb-3">
+                            <label for="name" >{{ __('اسم') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="name" type="text" class="form-control @error('email') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="name" >{{ __('وصف') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
+
+                                @error('description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row mb-3">
+                            <label for="name" >{{ __('صورة') }}</label>
+
+                            <div class="col-mb-3">
+                                <input id="photo" type="file" class="form-control @error('photo') is-invalid @enderror" name="photo" value="{{ old('photo') }}" required autocomplete="photo" autofocus>
+
+                                @error('photo')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
                        
                      
                     
-                        <div class="mb-3">
-                            <label> اسم</label>
-                            <input type="text" name="name" class="form-control">
-
-
-                        </div>
                        
-                        <div class="mb-3">
-                            <label> وصف</label>
-                            <input type="description" name="description" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label> صورة</label>
-                            <input type="file" name="photo" class="form-control">
-                        </div>
                        
                         
                     

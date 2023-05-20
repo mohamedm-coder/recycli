@@ -73,7 +73,7 @@
          
 
         
-            <a href={{'delete/'.$pro['id']}} class="btn btn-light border px-2 pt-2 icon-hover">حذف<i class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+           {{-- <a href={{'delete/'.$pro['id']}} class="btn btn-light border px-2 pt-2 icon-hover">حذف<i class="fas fa-heart fa-lg text-secondary px-1"></i></a>--}}
           </div>
         </div>
       

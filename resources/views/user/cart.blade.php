@@ -1,4 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+     
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style type="text/css">
 
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  background: #555;
+}
+
+.container {
+  max-width: 500px;
+  max-height: 100%;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+}
+.btn{
+  background-color: rgb(42, 124, 21);
+  padding: 15px;
+  height: 50px;
+  width: 200px;
+  color: aliceblue;
+}
+
+        
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
 
 <div class="container">
   <div class="row">
@@ -40,11 +92,17 @@
     @csrf
 
     <input type="hidden" name="amount" value="200">
-    <button  type="submit"  class="btn btn-primary shadow-0 me-1" > شراء </button>
+    <div class="center">
+    <button  type="submit" class="btn" > شراء </button>
+    </div>
+   
 </form>
 </div>
 
 
    
 </div>
+</body>
+</html>
+
 
