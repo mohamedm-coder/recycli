@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Scripts -->
+    
     <title>@yield("title")</title>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -32,11 +33,14 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
             <div class="container px-5">
               
-                <a class="navbar-brand" href="#!">رسكلي</a>
+                <a class="navbar-brand" href="#!"  > </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 {{--<div class="image-container">--}} <div class="feature bg-success bg-gradient text-white rounded-3 mb-3">
                   
-                     <i class="bi bi-recycle"></i>
+                   {{-- <i class="fa fa-recycle" aria-hidden="true"></i>--}}
+                
+                    <img src="recycli-plus-low-resolution-color-logo.png" height="100px" width="120px" class="rounded-circle"  >
+                     
                      
              
                   </div>

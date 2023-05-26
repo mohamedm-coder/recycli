@@ -58,6 +58,8 @@
 </div>
 <div class="row">
   <div class="row">
+
+
    
         @foreach ($products as $pro)
     <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
@@ -79,7 +81,92 @@
       
   </div>
 </div>
+
 @endforeach
+<div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+  <div class="card w-100 my-2 shadow-2-strong">
+    <img src="images/faces/téléchargement (2).jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+   
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">زجاج</h5>
+      <p class="card-text">كمية معتبرة </p>
+      <p class="card-text">66دج</p>
+      <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+       
+    
+        <a href="" class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+     
+
+    
+       {{-- <a href={{'delete/'.$pro['id']}} class="btn btn-light border px-2 pt-2 icon-hover">حذف<i class="fas fa-heart fa-lg text-secondary px-1"></i></a>--}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+  <div class="card w-100 my-2 shadow-2-strong">
+    <img src="images/faces/téléchargement (1).jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+   
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">زجاج</h5>
+      <p class="card-text">كمية معتبرة</p>
+      <p class="card-text">55دينار </p>
+      <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+       
+    
+        <a href="" class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+     
+
+    
+       {{-- <a href={{'delete/'.$pro['id']}} class="btn btn-light border px-2 pt-2 icon-hover">حذف<i class="fas fa-heart fa-lg text-secondary px-1"></i></a>--}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+  <div class="card w-100 my-2 shadow-2-strong">
+    <img src="images/faces/téléchargement (3).jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+   
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">بلاستيك</h5>
+      <p class="card-text">كمية معتبرة</p>
+      <p class="card-text">44دينار</p>
+      <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+       
+    
+        <a href=" "class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+     
+
+    
+       {{-- <a href={{'delete/'.$pro['id']}} class="btn btn-light border px-2 pt-2 icon-hover">حذف<i class="fas fa-heart fa-lg text-secondary px-1"></i></a>--}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+  <div class="card w-100 my-2 shadow-2-strong">
+    <img src="images/faces/téléchargement.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+   
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">حديد</h5>
+      <p class="card-text">كمية كبيرة</p>
+      <p class="card-text">66دج</p>
+      <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+       
+    
+        <a href="" class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+     
+
+    
+       {{-- <a href={{'delete/'.$pro['id']}} class="btn btn-light border px-2 pt-2 icon-hover">حذف<i class="fas fa-heart fa-lg text-secondary px-1"></i></a>--}}
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>

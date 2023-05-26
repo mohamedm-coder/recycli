@@ -10,6 +10,7 @@
          <div class="modal-content">
              <div class="modal-header">
              <h5 class="modal-title" id="exampleModalLabel">تفاصيل أكثر حول الموقع </h5>
+            
              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body">
@@ -17,11 +18,77 @@
              </div>
              <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">غلق</button>
-             
+             <div class="modal-header">
+                <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >الابلاغ عن موقع مليئ بالنفايات</a></button>
+              </div>            
              </div>
          </div>
          </div>
      </div>
+     <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">اهمية الرسكلة</h5>
+           
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+   هنا تجد كل جديد و تفصيل تتعلق بموقعنا 
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">غلق</button>
+            <div class="modal-header">
+               <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >الابلاغ عن موقع مليئ بالنفايات</a></button>
+               <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >الابلاغ عن موقع مليئ بالنفايات</a></button>
+             </div>            
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModallll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"> خطوات للرسكلة</h5>
+           
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+   هنا تجد كل جديد و تفصيل تتعلق بموقعنا 
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">غلق</button>
+            <div class="modal-header">
+               <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >الاالنفايات</a></button>
+               <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >خطوات الرسكلة</a></button>
+             </div>            
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">المواد القابلة للرسكلة</h5>
+           
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+   هنا تجد كل جديد و تفصيل تتعلق بموقعنا 
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">غلق</button>
+            <div class="modal-header">
+               <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >الابلاغ عن موقع مليئ بالنفايات</a></button>
+               <button type="button" class="btn btn-warning"> <a href="{{url('user/google')}}" data-dismiss="modal" data-target="#"  >الابلاغ عن موقع مليئ بالنفايات</a></button>
+             </div>            
+            </div>
+        </div>
+        </div>
+    </div>
+ 
  
 
  
@@ -115,7 +182,7 @@
                     الأخشاب
 
 </p>
-                 <a class="text-decoration-none" href="#!">
+                 <a class="text-decoration-none" href="#!"  data-bs-toggle="modal" data-bs-target="#exampleModalll">
                      اضغط للمزيد
                      <i class="bi bi-arrow-right"></i>
                  </a>
@@ -128,7 +195,7 @@
                     2-توفير الموارد الطبيعية
                     
                     3- تقليل تكاليف النفايات.</p>
-                 <a class="text-decoration-none" href="#!">
+                 <a class="text-decoration-none" href="#!"  data-bs-toggle="modal" data-bs-target="#exampleModall">
                      اضغط للمزيد
                      <i class="bi bi-arrow-right"></i>
                  </a>
@@ -144,7 +211,7 @@
                     
                     3- المعالجة
 </p>
-                 <a class="text-decoration-none" href="#!">
+                 <a class="text-decoration-none" href="#!"  data-bs-toggle="modal" data-bs-target="#exampleModallll">
                   اضغط للمزيد
                      <i class="bi bi-arrow-right"></i>
                  </a>
@@ -512,6 +579,7 @@
 <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
 © 2023 Copyright:
 <a class="text-reset fw-bold" href="http://recyclii.herokuapp.com/">http://recyclii.herokuapp.com/</a>
+<img src="recycli-plus-low-resolution-color-logo.png" height="100px" width="120px" class="rounded-circle"  >
 </div>
 <!-- Copyright -->
 </footer>
