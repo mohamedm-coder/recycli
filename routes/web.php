@@ -60,7 +60,6 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::post('product',[App\Http\Controllers\User\ProductController::class,'sel']);
     Route::get('search', [App\Http\Controllers\User\ProductController::class, 'search'])->name('search');
     Route::get('list',[App\Http\Controllers\User\ListController::class,'index']);
-
     Route::get('addcart/{id}', [App\Http\Controllers\User\ProductController::class, 'addcart'])->name('addcart');
     Route::get('cart', [App\Http\Controllers\User\ProductController::class, 'cart']);
     Route::post('pay', [App\Http\Controllers\User\PaymentController::class, 'pay']);
@@ -73,6 +72,8 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::post('dons',[App\Http\Controllers\User\DonController::class,'dons']);
     Route::get('google', [App\Http\Controllers\User\LocationController::class, 'google']);
     Route::post('gen', [App\Http\Controllers\User\LocationController::class, 'gen']);
+    Route::get('tandif', [App\Http\Controllers\User\TandifController::class, 'tandif']);
+    Route::get('omal', [App\Http\Controllers\User\TandifController::class, 'omal']);
 
 
 

@@ -78,7 +78,7 @@
             <span class="count"></span>
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
-            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+            <p class="mb-0 font-weight-normal float-left dropdown-header">اشعارات</p>
             <a class="dropdown-item">
               <div class="item-thumbnail">
                 <div class="item-icon bg-success">

@@ -10845,12 +10845,12 @@ textarea.form-control-lg {
 
 /* START OWL CARSOUEL  */
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-  background: #eee;
-  color: inherit;
+  background: whitesmoke;
+  color: black;
   border: none;
   padding: 0!important;
   font: inherit;
-  width: 50PX;
+  width: 150pX;
   height: 50px;
 }
 
@@ -10866,6 +10866,12 @@ textarea.form-control-lg {
   position: absolute !important;
   right: 1280px;
 }
+.owl-nav button.owl-prev{
+  position: absolute !important;
+  right: 1200px;
+  
+}
+
 
 
 
