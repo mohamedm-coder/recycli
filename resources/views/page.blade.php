@@ -565,8 +565,8 @@
        <i class="fas fa-envelope me-3"></i>
        Recycli@gmail.com
      </p>
-     <p><i class="fas fa-phone me-3"></i> + 213 666843230</p>
-     <p><i class="fas fa-print me-3"></i> + 213 779182538</p>
+     <p><i class="fas fa-phone me-3"></i>  213666843230+ </p>
+     <p><i class="fas fa-print me-3"></i>  213779182538+</p>
    </div>
    <!-- Grid column -->
  </div>
@@ -576,7 +576,7 @@
 <!-- Section: Links  -->
 
 <!-- Copyright -->
-<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+<div class="text-center p-4" style="background-color: rgba(6, 27, 71, 0.05);">
 © 2023 Copyright:
 <a class="text-reset fw-bold" href="http://recyclii.herokuapp.com/">http://recyclii.herokuapp.com/</a>
 <img src="recycli-plus-low-resolution-color-logo.png" height="100px" width="120px" class="rounded-circle"  >

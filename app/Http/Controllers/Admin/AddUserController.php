@@ -42,8 +42,21 @@ class AddUserController extends Controller
                    return view('admin.product',['products'=>$data]);
                
                   }
-                  public function delete($id){
+                  
+                   public function delete($id){
+                    $data=product::find($id);
+                    $data->delete();
+                    return redirect('admin/product');
+                
+                 }
+                   public function deletee($id){
                     $data=don::find($id);
+                    $data->delete();
+                    return redirect('admin/leddon');
+                
+                   }
+                   public function deleteee($id){
+                    $data=google::find($id);
                     $data->delete();
                     return redirect('admin/leddon');
                 

@@ -53,6 +53,7 @@
                     
                         <li class="nav-item"><a href="{{ route('register') }}" class="btn btn-primary mx-2">التسجيل</a></li>
                         <li class="nav-item"><a href="{{ route('login') }}" class="btn btn-success mx-2">تسجيل الدخول</a></li>
+                        <li class="nav-item"><a href="{{ route('team') }}" class="btn btn btn-link mx-5">نبذة عن فريق العمل</a></li>
                     
                         
                      
@@ -67,6 +68,7 @@
             @yield('content')
         </main>
     </div>
+    
     @include("layouts.inc.footer-scripts")
  
 </body>

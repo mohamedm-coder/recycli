@@ -18,7 +18,7 @@ Route::get('/', [App\Http\Controllers\ClientController::class, 'wel']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/page', [App\Http\Controllers\PageController::class, 'index'])->name('page');
-
+Route::get('/team', [App\Http\Controllers\TeamController::class, 'index'])->name('team');
 
   
 
@@ -41,8 +41,12 @@ Route::prefix('admin')->middleware(['auth','isAdmin']) ->group(function() {
     Route::get('dash',[App\Http\Controllers\User\DashController::class,'index']);
     Route::get('loc',[App\Http\Controllers\Admin\AddUserController::class,'loc']);
     Route::get('leddon',[App\Http\Controllers\Admin\AddUserController::class,'led']);
+    Route::get('deletee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deletee']);
     Route::get('delete/{id}',[App\Http\Controllers\Admin\AddUserController::class,'delete']);
-    Route::get('delete/{id}',[App\Http\Controllers\User\ListController::class,'delete']);
+    
+    Route::get('deleteee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deleteee']);
+
+  
     Route::get('product',[App\Http\Controllers\Admin\AddUserController::class,'pro']);
  
    
@@ -56,7 +60,7 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::post('product',[App\Http\Controllers\User\ProductController::class,'sel']);
     Route::get('search', [App\Http\Controllers\User\ProductController::class, 'search'])->name('search');
     Route::get('list',[App\Http\Controllers\User\ListController::class,'index']);
-    Route::get('delete/{id}',[App\Http\Controllers\User\ListController::class,'delete']);
+
     Route::get('addcart/{id}', [App\Http\Controllers\User\ProductController::class, 'addcart'])->name('addcart');
     Route::get('cart', [App\Http\Controllers\User\ProductController::class, 'cart']);
     Route::post('pay', [App\Http\Controllers\User\PaymentController::class, 'pay']);

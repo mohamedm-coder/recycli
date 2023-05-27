@@ -13,10 +13,5 @@ class ListController extends Controller
     return view('user.list',['products'=>$data]);
 
    }
-   public function delete($id){
-    $data=product::find($id);
-    $data->delete();
-    return redirect('user/dash');
-
-   }
+   
 }
