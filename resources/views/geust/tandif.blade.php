@@ -21,7 +21,7 @@
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-teal w3-padding" id="myHeader">
+<header class="w3-container w3-green w3-padding" id="myHeader">
   <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
   <div class="w3-center">
   <h4>موقعك رسكلي</h4>
@@ -55,7 +55,7 @@
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
   <h3>خدمة تنظيف المنازل</h3><br>
-  <i class="	fa fa-building w3-margin-bottom w3-text-teal" style="font-size:120px"></i>
+  <i class="	fa fa-building w3-margin-bottom w3-text-green" style="font-size:120px"></i>
   <p>Built-in responsiveness</p>
   <p>Mobile first fluid grid</p>
   <p>Fits any screen sizes</p>
@@ -67,7 +67,7 @@
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
   <h3>خدمة تنظيف الاحياء</h3><br>
-  <i class="	fa fa-heartbeat w3-margin-bottom w3-text-teal" style="font-size:120px"></i>
+  <i class="	fa fa-heartbeat w3-margin-bottom w3-text-green" style="font-size:120px"></i>
   <p>Standard CSS only</p>
   <p>Easy to learn</p>
   <p>No need for jQuery</p>
@@ -79,7 +79,7 @@
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
   <h3>طلب عامل تنظيف</h3><br>
-  <i class="fa fa-thumbs-up w3-margin-bottom w3-text-teal" style="font-size:120px"></i>
+  <i class="fa fa-thumbs-up w3-margin-bottom w3-text-green" style="font-size:120px"></i>
   <p>Paper like design</p>
   <p>Bold colors and shadows</p>
   <p>Equal across platforms</p>

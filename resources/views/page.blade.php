@@ -220,22 +220,61 @@
      </div>
  </section>
  <!-- Pricing section-->
- <section class="bg-light py-5 border-bottom" id="adamat">
-     <div class="container px-5 my-5">
-         <div class="text-center mb-5">
-             <h2 class="fw-bolder">الخدمات المقدمة</h2>
-             <p class="lead mb-0">حسب خطط مدروسة من طرفنا</p>
-         </div>
+ <section class="bg-light py-5 border-bottom" >
+     <div class="container px-5 my-5" id="adamat">
          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">خطة 1</div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">بيع</span>
+                            <span class="display-4 fw-bold">شراء</span>
+                            <span class="text-muted">/  مواد الرسكلة</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>تسجيل حساب</strong>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                تسجيل الدخول لحسابك
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                مشاهدة عروض البيع 
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                امكانية البيع 
+                            </li>
+                            <li class="mb-2">
+                               <i class="bi bi-check text-primary"></i>
+                                امكانية نقل مواد
+                            </li>
+                            <li class="mb-2">
+                               <i class="bi bi-check text-primary"></i>
+                               امكانية شراء بعض المواد
+                            </li>
+                     
+                            <li class="mb-2">
+                               <i class="bi bi-check text-primary"></i>
+                        حساب مجاني
+                            </li>
+                        </ul>
+                        <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('dash')}}">اختر الخطة</a></div>
+                    </div>
+                </div>
+            </div>
              
              <div class="col-lg-6 col-xl-4">
                  <div class="card mb-5 mb-xl-0">
                      <div class="card-body p-5">
                          <div class="small text-uppercase fw-bold text-muted">خطة 1</div>
                          <div class="mb-3">
-                             <span class="display-4 fw-bold">بيع</span>
-                             <span class="display-4 fw-bold">شراء</span>
-                             <span class="text-muted">/  مواد الرسكلة</span>
+                             <span class="display-4 fw-bold">تنظيف</span>
+                         
                          </div>
                          <ul class="list-unstyled mb-4">
                              <li class="mb-2">
@@ -248,19 +287,19 @@
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 مشاهدة عروض البيع 
+                                 فقط انقر و الباقي علينا
                              </li>
                              <li class="mb-2">
                                  <i class="bi bi-check text-primary"></i>
-                                 امكانية البيع 
+                                 طلب عامل تنظيف لمنزلك
                              </li>
                              <li class="mb-2">
                                 <i class="bi bi-check text-primary"></i>
-                                 امكانية نقل مواد
+                                 تنظيف المنازل
                              </li>
                              <li class="mb-2">
                                 <i class="bi bi-check text-primary"></i>
-                                امكانية شراء بعض المواد
+                                خدمات تنظيف الحي عبر اشتراك شهري بسعر رمزي
                              </li>
                       
                              <li class="mb-2">
@@ -268,10 +307,11 @@
                          حساب مجاني
                              </li>
                          </ul>
-                         <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('dash')}}">اختر الخطة</a></div>
+                         <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('tandif')}}">اختر الخطة</a></div>
                      </div>
                  </div>
              </div>
+             
              
              <!-- Pricing card pro-->
              <div class="col-lg-6 col-xl-4">
@@ -282,7 +322,7 @@
                              Pro
                          </div>
                          <div class="mb-3">
-                             <span class="display-4 fw-bold">الابلاغ عن موقع مليئ بالنفايات</span>
+                             <span class="display-4 fw-bold">الابلاغ عن موقع</span>
                              <span class="text-muted">/ </span>
                          </div>
                          <ul class="list-unstyled mb-4">
@@ -350,10 +390,11 @@
                            هنيئا لك
                              </li>
                             
-                         <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('tandif')}}">اختر خطة</a></div>
+                         <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('addvehicule')}}">اختر خطة</a></div>
                      </div>
                  </div>
              </div>
+             
          </div>
      </div>
  </section>

@@ -15,5 +15,9 @@ class TandifController extends Controller
     {
         return view ('geust.omal');
     }
+    public function one()
+    {
+        return view ('geust.one');
+    }
 }
 

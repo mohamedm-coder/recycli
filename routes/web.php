@@ -42,6 +42,7 @@ Route::get('google', [App\Http\Controllers\geust\LocationController::class, 'goo
 Route::post('gen', [App\Http\Controllers\geust\LocationController::class, 'gen']);
 Route::get('tandif', [App\Http\Controllers\geust\TandifController::class, 'tandif']);
 Route::get('omal', [App\Http\Controllers\geust\TandifController::class, 'omal']);
+Route::get('one', [App\Http\Controllers\geust\TandifController::class, 'one']);
 
   
 
@@ -97,6 +98,7 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::post('gen', [App\Http\Controllers\User\LocationController::class, 'gen']);
     Route::get('tandif', [App\Http\Controllers\User\TandifController::class, 'tandif']);
     Route::get('omal', [App\Http\Controllers\User\TandifController::class, 'omal']);
+  
 
 
 
