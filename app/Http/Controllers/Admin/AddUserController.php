@@ -58,7 +58,7 @@ class AddUserController extends Controller
                    public function deleteee($id){
                     $data=google::find($id);
                     $data->delete();
-                    return redirect('admin/leddon');
+                    return redirect('admin/loc');
                 
                    }
                  

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\user;
+namespace App\Http\Controllers\geust;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Omnipay\Omnipay;
-use App\Models\Payment;
+use  App\Models\Payment;
 
 
 

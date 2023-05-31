@@ -20,6 +20,29 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/page', [App\Http\Controllers\PageController::class, 'index'])->name('page');
 Route::get('/team', [App\Http\Controllers\TeamController::class, 'index'])->name('team');
 
+
+Route::get('dashb',[App\Http\Controllers\TeamController::class,'dashb']);
+Route::get('dash',[App\Http\Controllers\geust\DashController::class,'index']);
+Route::get('product',[App\Http\Controllers\geust\ProductController::class,'index']);
+Route::get('product/sell',[App\Http\Controllers\geust\ProductController::class,'Sell']);
+Route::post('product',[App\Http\Controllers\geust\ProductController::class,'sel']);
+Route::get('search', [App\Http\Controllers\geust\ProductController::class, 'search'])->name('search');
+Route::get('listm',[App\Http\Controllers\geust\ListController::class,'index']);
+Route::get('addcart/{id}', [App\Http\Controllers\geust\ProductController::class, 'addcart'])->name('addcart');
+Route::get('cart', [App\Http\Controllers\geust\ProductController::class, 'cart']);
+Route::post('pay', [App\Http\Controllers\geust\PaymentController::class, 'pay']);
+Route::get('success', [App\Http\Controllers\geust\PaymentController::class, 'success']);
+Route::get('error', [App\Http\Controllers\geust\PaymentController::class, 'error']);
+Route::get('addvehicule',[App\Http\Controllers\geust\AddVehiculeController::class,'index']);
+Route::get('doni',[App\Http\Controllers\geust\DonController::class,'doni']);
+Route::get('map',[App\Http\Controllers\geust\MapController::class,'index']);
+Route::get('don',[App\Http\Controllers\geust\DonController::class,'don']);
+Route::post('dons',[App\Http\Controllers\geust\DonController::class,'dons']);
+Route::get('google', [App\Http\Controllers\geust\LocationController::class, 'google']);
+Route::post('gen', [App\Http\Controllers\geust\LocationController::class, 'gen']);
+Route::get('tandif', [App\Http\Controllers\geust\TandifController::class, 'tandif']);
+Route::get('omal', [App\Http\Controllers\geust\TandifController::class, 'omal']);
+
   
 
  

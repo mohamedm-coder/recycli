@@ -39,7 +39,7 @@
                   
                    {{-- <i class="fa fa-recycle" aria-hidden="true"></i>--}}
                 
-                    <img src="recycli-plus-low-resolution-color-logo.png" height="100px" width="120px" class="rounded-circle"  >
+                    <img src="recycli-plus-logo.png" height="100px" width="120px" class="rounded-circle"  >
                      
                      
              
@@ -50,6 +50,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contacts">حولنا</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacts">اتصل بنا</a></li>
                         <li class="nav-item"><a class="nav-link" href="#adamat">خدماتنا</a></li>
+                        <li class="nav-item"><a href="{{ url('dash') }}" class="btn btn-primary mx-2">جرب خدماتنا مجانا</a></li>
                     
                         <li class="nav-item"><a href="{{ route('register') }}" class="btn btn-primary mx-2">التسجيل</a></li>
                         <li class="nav-item"><a href="{{ route('login') }}" class="btn btn-success mx-2">تسجيل الدخول</a></li>

@@ -268,7 +268,7 @@
                          حساب مجاني
                              </li>
                          </ul>
-                         <div class="d-grid"><a class="btn btn-outline-primary" href="#!">اختر الخطة</a></div>
+                         <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('dash')}}">اختر الخطة</a></div>
                      </div>
                  </div>
              </div>
@@ -312,7 +312,7 @@
                              </li>
                             
                          </ul>
-                         <div class="d-grid"><a class="btn btn-primary" href="#!">اختيار الخطة</a></div>
+                         <div class="d-grid"><a class="btn btn-primary" href="{{url('google')}}">اختيار الخطة</a></div>
                      </div>
                  </div>
              </div>
@@ -350,7 +350,7 @@
                            هنيئا لك
                              </li>
                             
-                         <div class="d-grid"><a class="btn btn-outline-primary" href="#!">اختر خطة</a></div>
+                         <div class="d-grid"><a class="btn btn-outline-primary" href="{{url('tandif')}}">اختر خطة</a></div>
                      </div>
                  </div>
              </div>
@@ -579,7 +579,7 @@
 <div class="text-center p-4" style="background-color: rgba(6, 27, 71, 0.05);">
 © 2023 Copyright:
 <a class="text-reset fw-bold" href="http://recyclii.herokuapp.com/">http://recyclii.herokuapp.com/</a>
-<img src="recycli-plus-low-resolution-color-logo.png" height="100px" width="120px" class="rounded-circle"  >
+<img src="recycli-plus-logo.png" height="100px" width="120px" class="rounded-circle"  >
 </div>
 <!-- Copyright -->
 </footer>
