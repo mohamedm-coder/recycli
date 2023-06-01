@@ -20,7 +20,7 @@
               <p>بامكانك بيع او شراء منتوجات بكل سهولة</p>
               <hr>
                <i class="fa fa-shopping-cart" aria-hidden="true" ></i>
-              <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+              <p>يمكنك معنا القيام بشراء المواد المرسكلة او بيع بعض المواد و اكتساب المال من خلالنا ما عليك الى الضغط على بيع و اضافة تفاصيلك .</p><br>
             </div>
             <a href="{{url('dash')}}" class="w3-button  w3-green">شراء منتوج</a>
             <a href="{{url('product')}}" class="w3-button  w3-green">بيع منتوج</a>
@@ -49,7 +49,7 @@
       <p>تمكنك هاته الخدمة من طلب تنظيف منزل او الاشتراك معنا لخدمة تنظيف حيك</p>
       <hr>
       <i class="fa fa-medkit" aria-hidden="true"></i>
-      <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+      <p>بنقرة واحدة فقط من منزلك يمكنك تنظيف حيك او الاستفادة من خدمة تنظيف منزلك كن ذكيا نحن فقط نقوم بذلك من اجلك.</p><br>
     </div>
     <a href="{{url('tandif')}}" class="w3-button  w3-green">اضغط للاستفادة من الخدمة</a>
   </div>
@@ -61,7 +61,7 @@
       <p>يمكنك ذلك بسهولة</p>
       <hr>
       <i class="fa fa-map-marker" aria-hidden="true"></i>
-      <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+      <p>يمكنك الابلاغ عن موقع بكل سهولة عبر الخريطة نحن نقدر لك ذلك شكر جزيلا علو وقتك.</p><br>
     </div>
     <a href="{{url('google')}}" class="w3-button  w3-green">ابلغ عن موقع من هنا</a> 
   </div>
@@ -73,7 +73,7 @@
       <p>يمكنك طلب عامل تنظيف بكل سهولة </p>
       <hr>
       <i class="fa fa-user-o" aria-hidden="true"></i>
-      <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+      <p>يمكنك طلب عامل تنظيف بكل سهولة فقط بنقرة واحدة ما عليك الا مساعدتنا ببعض المعلومات فقط و نحن سنتصل بك فورا.</p><br>
     </div>
     <a href="{{url('tandif')}}" class="w3-button  w3-green">اضغط لطلب عامل تنظيف</a>
   </div>
@@ -84,7 +84,7 @@
     <div class="w3-container">
       <p>كن محسنا </p>
       <hr>
-      <i class="fa fa-check-square" aria-hidden="true"></i>      <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+      <i class="fa fa-check-square" aria-hidden="true"></i>      <p>يمكنك التبرع حت ببعض المواد التي لن تستفيد منها انت بكل سهولة معنا .</p><br>
     </div>
     <a href="{{url('don')}}" class="w3-button  w3-green">اضغط هنا </a>
   </div>
