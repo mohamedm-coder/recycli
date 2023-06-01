@@ -32,32 +32,28 @@ body{
 <div class="w3-row-padding">
 
 <div class="w3-half">
-<form class="w3-container w3-card-4">
+<form class="w3-container w3-card-4" action= "{{url('omals')}}"  method="POST" enctype="multipart/form-data" >
+  @csrf
   <h2>ادخل معلوماتك و سيتصل بك فريقنا في اقرب وقت</h2>
   <div class="w3-section">      
-    <input class="w3-input" type="text" required>
+    <input class="w3-input" type="text" name="phone" >
     <label>رقم الهاتف</label>
   </div>
   <div class="w3-section">      
-    <input class="w3-input" type="text" required>
+    <input class="w3-input" type="text" name="location" >
     <label>العنوان</label>
   </div>
   <div class="w3-section">      
-    <input class="w3-input" type="text" required>
+    <input class="w3-input" type="text" name="address" >
     <label>اضافة تفاصيل </label>
   </div>
 
   <div class="w3-row">
-  <div class="w3-half">
-    <input id="milk" class="w3-check" type="checkbox" checked="checked">
-    <label>منزل كبير </label>
-    <br>
-    <input id="sugar" class="w3-check" type="checkbox">
-    <label>منزل صغير </label>
+ 
     
     <br><br>
-    <a href="{{url('omal')}}" class="w3-button w3-blue">طلب الخدمة</a>
-  </div>
+    <button type="submit" > طلب الخدمة</button>
+  
 
 
 

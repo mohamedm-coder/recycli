@@ -70,7 +70,7 @@ class PaymentController extends Controller
             $payment->payment_status = $arr['state'];
             $payment->save();
        
-            return "Payment is successful. Your transaction id is: "  . $arr['id'];
+            return "سيتم الاتصال بك لمزيد من المعلومات  Payment is successful. Your transaction id is: "  . $arr['id'];
         } 
         else {
             return $response->getMessage();

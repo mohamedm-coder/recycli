@@ -65,7 +65,7 @@
                             <label for="prix" >{{ __('السعر') }}</label>
 
                             <div class="col-mb-3">
-                                <input id="prix" type="text" class="form-control @error('prix') is-invalid @enderror" name="prix" value="{{ old('prix') }}" required autocomplete="prix" autofocus>
+                                <input id="prix" type="number" class="form-control @error('prix') is-invalid @enderror" name="prix" value="{{ old('prix') }}" required autocomplete="prix" autofocus>
 
                                 @error('prix')
                                     <span class="invalid-feedback" role="alert">

@@ -42,6 +42,9 @@ Route::get('google', [App\Http\Controllers\geust\LocationController::class, 'goo
 Route::post('gen', [App\Http\Controllers\geust\LocationController::class, 'gen']);
 Route::get('tandif', [App\Http\Controllers\geust\TandifController::class, 'tandif']);
 Route::get('omal', [App\Http\Controllers\geust\TandifController::class, 'omal']);
+Route::post('omals', [App\Http\Controllers\geust\TandifController::class, 'omals']);
+Route::get('accept', [App\Http\Controllers\geust\TandifController::class, 'accept']);
+
 Route::get('one', [App\Http\Controllers\geust\TandifController::class, 'one']);
 
   
