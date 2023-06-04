@@ -37,7 +37,7 @@ class LoginController extends Controller
    
     elseif(Auth::user()->role == '0')
     {
-        return redirect('user/dash')->with('welcome user');
+        return redirect('user/onee')->with('welcome user');
     }
     elseif(Auth::user()->role == '2')
     {

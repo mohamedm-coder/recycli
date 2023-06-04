@@ -95,7 +95,15 @@
       <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
        
     
-        <a href="" class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+        <form  action="{{url('pay')}}" method="POST" >
+          @csrf
+      
+          <input type="hidden" name="amount" value="200">
+          <div class="center">
+          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          </div>
+         
+      </form>
      
 
     
@@ -116,7 +124,15 @@
       <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
        
     
-        <a href="" class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+        <form  action="{{url('pay')}}" method="POST" >
+          @csrf
+      
+          <input type="hidden" name="amount" value="200">
+          <div class="center">
+          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          </div>
+         
+      </form>
      
 
     
@@ -137,7 +153,15 @@
       <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
        
     
-        <a href=" "class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+        <form  action="{{url('pay')}}" method="POST" >
+          @csrf
+      
+          <input type="hidden" name="amount" value="200">
+          <div class="center">
+          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          </div>
+         
+      </form>
      
 
     
@@ -158,7 +182,15 @@
       <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
        
     
-        <a href="" class="btn btn-primary shadow-0 me-1">تم بيعها</a>
+        <form  action="{{url('pay')}}" method="POST" >
+          @csrf
+      
+          <input type="hidden" name="amount" value="200">
+          <div class="center">
+          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          </div>
+         
+      </form>
      
 
     

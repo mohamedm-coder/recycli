@@ -70,11 +70,11 @@ Route::prefix('admin')->middleware(['auth','isAdmin']) ->group(function() {
     Route::get('leddon',[App\Http\Controllers\Admin\AddUserController::class,'led']);
     Route::get('deletee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deletee']);
     Route::get('delete/{id}',[App\Http\Controllers\Admin\AddUserController::class,'delete']);
-    
     Route::get('deleteee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deleteee']);
-
-  
+    Route::get('deleteeee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deleteeee']);
     Route::get('product',[App\Http\Controllers\Admin\AddUserController::class,'pro']);
+    
+    Route::get('kidma',[App\Http\Controllers\Admin\AddUserController::class,'kdm']);
  
    
    
@@ -101,6 +101,12 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::post('gen', [App\Http\Controllers\User\LocationController::class, 'gen']);
     Route::get('tandif', [App\Http\Controllers\User\TandifController::class, 'tandif']);
     Route::get('omal', [App\Http\Controllers\User\TandifController::class, 'omal']);
+    Route::post('omalss', [App\Http\Controllers\User\TandifController::class, 'omalss']);
+    Route::get('acc', [App\Http\Controllers\User\TandifController::class, 'acc']);
+
+
+    Route::get('onee', [App\Http\Controllers\User\TandifController::class, 'onee']);
+
   
 
 

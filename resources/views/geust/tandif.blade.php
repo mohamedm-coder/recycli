@@ -53,37 +53,35 @@
 
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
+  <div class="w3-card w3-container" style="min-height:360px">
   <h3>خدمة تنظيف المنازل</h3><br>
   <i class="	fa fa-building w3-margin-bottom w3-text-green" style="font-size:120px"></i>
-  <p>Built-in responsiveness</p>
-  <p>Mobile first fluid grid</p>
-  <p>Fits any screen sizes</p>
-  <p>PC Tablet and Mobile</p>
+  <p>نوفر عليك الجهد و الوقت </p>
+
+
   <a href="{{url('omal')}}" class="w3-button w3-blue">طلب الخدمة</a>
   </div>
 </div>
 
 <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
+  <div class="w3-card w3-container" style="min-height:360px">
   <h3>خدمة تنظيف الاحياء</h3><br>
   <i class="	fa fa-heartbeat w3-margin-bottom w3-text-green" style="font-size:120px"></i>
-  <p>Standard CSS only</p>
-  <p>Easy to learn</p>
-  <p>No need for jQuery</p>
-  <p>No JavaScript library</p>
+  <p>كن جميلا تكن افضل</p>
+  
+
   <a href="{{url('omal')}}" class="w3-button w3-blue">طلب الخدمة</a>
   </div>
 </div>
 
 <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
+  <div class="w3-card w3-container" style="min-height:360px">
   <h3>طلب عامل تنظيف</h3><br>
   <i class="fa fa-thumbs-up w3-margin-bottom w3-text-green" style="font-size:120px"></i>
-  <p>Paper like design</p>
-  <p>Bold colors and shadows</p>
-  <p>Equal across platforms</p>
-  <p>Equal across devices</p>
+  <p>نوفر عليك وقتك </p>
+  <p></p>
+
+
   <a href="{{url('omal')}}" class="w3-button w3-blue">طلب الخدمة</a>
   </div>
 </div>
@@ -91,35 +89,8 @@
 
 
 
-
-  
-
-
-<hr>
-<h2 class="w3-center">Buttons</h2>
-<div class="w3-center">
-  <br>
-
-  <a class="w3-button w3-theme">Button</a>
-  <a class="w3-button w3-theme-d3 w3-disabled">Button</a>
-  <br><br>
-  <a class="w3-button w3-circle w3-large w3-black"><i class="fa fa-plus"></i></a>
-  <a class="w3-button w3-circle w3-large w3-theme"><i class="fa fa-plus"></i></a>  
-  <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a>
-</div>
 <br>
-<div class="w3-center">
-  <div class="w3-dropdown-hover">
-    <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
-    <div class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button">Link 3</a>
-    </div>
-  </div>
-</div>
 
-</div>
 
 <hr>
 <div class="w3-center">

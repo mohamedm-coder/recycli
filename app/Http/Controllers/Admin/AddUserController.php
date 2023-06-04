@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\google;
 use App\Models\don;
 use App\Models\product;
+use App\Models\kidma;
 
 class AddUserController extends Controller
 {
@@ -29,12 +30,7 @@ class AddUserController extends Controller
             return view('admin.location',['googles'=>$data]);
         
            }
-           public function led()
-    {
-            $data=don::all();
-            return view('admin.leddon',['dons'=>$data]);
-        
-           }
+ 
            
            public function pro()
            {
@@ -59,6 +55,18 @@ class AddUserController extends Controller
                     $data=google::find($id);
                     $data->delete();
                     return redirect('admin/loc');
+                
+                   }
+                   public function kdm()
+           {
+                   $data=kidma::all();
+                   return view('admin.kidma',['kidmas'=>$data]);
+               
+                  }
+                  public function deleteeee($id){
+                    $data=kidma::find($id);
+                    $data->delete();
+                    return redirect('admin/kidma');
                 
                    }
                  

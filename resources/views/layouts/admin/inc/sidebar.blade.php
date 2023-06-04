@@ -38,9 +38,9 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/icons/mdi.html">
+        <a class="nav-link" href="{{url('admin/kidma')}}">
           <i class="mdi mdi-emoticon menu-icon"></i>
-          <span class="menu-title">الايقونات</span>
+          <span class="menu-title">طلبات التنظيف</span>
         </a>
       </li>
       <li class="nav-item">

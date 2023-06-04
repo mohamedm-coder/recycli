@@ -1,4 +1,4 @@
-@extends('layouts.geust')
+@extends('layouts.user')
 @section('content')
 
 <!DOCTYPE html>
@@ -18,8 +18,8 @@
         <i class="	fa fa-shopping-cart w3-margin-bottom w3-text-green" style="font-size:120px"></i>
         <p>نوفر عليك الجهد و الوقت </p>
       
-      <a href="{{url('dash')}}" class="w3-button  w3-green">شراء منتوج</a>
-      <a href="{{url('product')}}" class="w3-button  w3-green">بيع منتوج</a>
+      <a href="{{url('user/dash')}}" class="w3-button  w3-green">شراء منتوج</a>
+      <a href="{{url('user/product')}}" class="w3-button  w3-green">بيع منتوج</a>
         </div>
       </div>
         
@@ -29,7 +29,7 @@
           <i class="	fa fa-taxi w3-margin-bottom w3-text-green" style="font-size:120px"></i>
               <p>معنا يمكنك الاستفادة من خدمة النقل بضغطة واحدة و بكل سهولة .</p>
               
-            <a href="{{url('addvehicule')}}" class="w3-button  w3-green">الانتقال لخدمات النقل</a>
+            <a href="{{url('user/addvehicule')}}" class="w3-button  w3-green">الانتقال لخدمات النقل</a>
           </div>
         </div>
   
@@ -38,7 +38,7 @@
       <h3>خدمات التنظيف</h3><br>
       <i class="	fa fa-medkit w3-margin-bottom w3-text-green" style="font-size:120px"></i>
       <p>بنقرة واحدة فقط من منزلك يمكنك تنظيف حيك او الاستفادة من خدمة تنظيف منزلك كن ذكيا نحن فقط نقوم بذلك من اجلك.</p>
-    <a href="{{url('tandif')}}" class="w3-button  w3-green">اضغط للاستفادة من الخدمة</a>
+    <a href="{{url('user/tandif')}}" class="w3-button  w3-green">اضغط للاستفادة من الخدمة</a>
   </div>
     </div>
 
@@ -50,7 +50,7 @@
 
       <p>يمكنك الابلاغ عن موقع بكل سهولة عبر الخريطة نحن نقدر لك ذلك شكر جزيلا علو وقتك.</p><br>
     
-    <a href="{{url('google')}}" class="w3-button  w3-green">ابلغ عن موقع من هنا</a> 
+    <a href="{{url('user/google')}}" class="w3-button  w3-green">ابلغ عن موقع من هنا</a> 
   </div>
     </div>
     <div class="w3-third">
@@ -59,7 +59,7 @@
       <i class="	fa fa-user-o w3-margin-bottom w3-text-green" style="font-size:120px"></i>
       <p>يمكنك طلب عامل تنظيف بكل سهولة فقط بنقرة واحدة ما عليك الا مساعدتنا ببعض المعلومات فقط و نحن سنتصل بك فورا.</p><br>
     
-    <a href="{{url('tandif')}}" class="w3-button  w3-green">اضغط لطلب عامل تنظيف</a>
+    <a href="{{url('user/tandif')}}" class="w3-button  w3-green">اضغط لطلب عامل تنظيف</a>
   </div>
 </div>
 <div class="w3-third">
@@ -69,7 +69,7 @@
 
         <p>يمكنك التبرع حت ببعض المواد التي لن تستفيد منها انت بكل سهولة معنا .</p><br>
    
-    <a href="{{url('don')}}" class="w3-button  w3-green">اضغط هنا </a>
+    <a href="{{url('user/don')}}" class="w3-button  w3-green">اضغط هنا </a>
   </div>
 </div>
   
