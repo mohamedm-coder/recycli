@@ -30,6 +30,12 @@ class AddUserController extends Controller
             return view('admin.location',['googles'=>$data]);
         
            }
+           public function led()
+           {
+                   $data=don::all();
+                   return view('admin.leddon',['dons'=>$data]);
+               
+                  }
  
            
            public function pro()
