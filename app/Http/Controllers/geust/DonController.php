@@ -33,8 +33,9 @@ class DonController extends Controller
         $requestData=$request->all();
     
    
-        $uploadedFileUrl = Cloudinary::upload($request->file('photo')->getRealPath())->getSecurePath();
-       
+        $fileName=time().$request->file('photo')->getClientOriginalName();
+        $path=$request->file('photo')->storeAs('images',$fileName,'public');
+        $requestData['photo']=  '/storage/'.$path;       
         don::create($requestData);
         
  
