@@ -36,7 +36,7 @@
     .line {
       height: 2px;
       width: 6rem;
-      background-color: #e26c4f;
+      background-color: #3bca4e;
       margin-bottom: calc(3rem + 2vmin);
     }
 
@@ -63,7 +63,7 @@
       width: calc(6rem + 4vmin);
       height: calc(6rem + 4vmin);
       position: relative;
-      box-shadow: 5px -3px #e26c4f;
+      box-shadow: 5px -3px #4adb52;
       background-size: cover;
       margin-bottom: calc(0.7rem + 0.5vmin);
     }
@@ -78,7 +78,7 @@
     #profession {
       font-size: calc(0.8rem + 0.3vmin);
       margin-bottom: calc(0.7rem + 0.5vmin);
-      color: #e26c4f;
+      color: #4fce64;
     }
 
     #description {
@@ -94,7 +94,7 @@
     .arrow {
       width: calc(1.4rem + 0.6vmin);
       height: calc(1.4rem + 0.6vmin);
-      border: solid #e26c4f;
+      border: solid #22b169;
       border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
       cursor: pointer;
       transition: transform 0.3s;
@@ -129,7 +129,7 @@
 
 <body>
   <div class="testimonial">
-    <h1>Our Reviews</h1>
+    <h1>فريقنا للعمل </h1>
     <div class="line"></div>
     <!-- arrow wrapper contains the review and the arrows -->
     <div class="arrow-wrapper">
@@ -162,7 +162,7 @@
 
     let people = [{
         photo: 'url("https://scontent.fblj1-2.fna.fbcdn.net/v/t39.30808-6/327728612_1179514309351914_636541914474566891_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGHmuy5p_buFmaGCchQzAaMMyWr661_nwMzJavrrX-fA0UNt7mlyBNLhEpWnZcY7fGfIVEg-YXLohTHxvggcl_-&_nc_ohc=FIQtum5A8lcAX9xfy2O&_nc_ht=scontent.fblj1-2.fna&oh=00_AfA_lMGjHijmlmGrX7b8aNveWNrZN3g_frNMEwllDUeG3w&oe=64750901")',
-        name: "Boualleg Mohamed lamine",
+        name: "بوعلاق محمد لمين ",
         profession: "مهندس برمجيات",
         description: "ماستر 2 اعلام الي :"
       },

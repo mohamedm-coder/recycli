@@ -186,7 +186,7 @@
           @csrf
       
           <input type="hidden" name="amount" value="200">
-          <div class="center">
+          <div class="text-center">
           <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
           </div>
          
