@@ -25,8 +25,15 @@ class LocationController extends Controller
 
         ]);
         $requestData=$request->all();
-        $uploadedFileUrl = Cloudinary::upload($request->file('photo')->getRealPath())->getSecurePath();
-        dd($uploadedFileUrl);
+        $photo = $request->file('photo');
+        $uploadedFileUrl = Cloudinary::upload($photo->getRealPath())->getSecurePath();
+
+        $google = new google;
+        $google->address = $request->address;
+        $google->phone = $request->phone;
+        $google->location = $request->location;
+        $google->photo = $uploadedFileUrl;
+        $google->save();       
 
         google::create($requestData);
  

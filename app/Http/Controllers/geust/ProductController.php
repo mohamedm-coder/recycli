@@ -5,6 +5,8 @@ namespace App\Http\Controllers\geust;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\product;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
+
 
 class ProductController extends Controller
 {
@@ -27,9 +29,16 @@ class ProductController extends Controller
 
         ]);
         $requestData=$request->all();
-        $fileName=time().$request->file('photo')->getClientOriginalName();
-        $path=$request->file('photo')->storeAs('images',$fileName,'public');
-        $requestData['photo']= '/storage/'.$path;
+        $photo = $request->file('photo');
+        $uploadedFileUrl = Cloudinary::upload($photo->getRealPath())->getSecurePath();
+
+        $product = new product;
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->prix = $request->prix;
+        $product->photo = $uploadedFileUrl;
+        $product->save();
+     
         product::create($requestData);
  
         
