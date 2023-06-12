@@ -15,7 +15,7 @@
   <div class="dropdown">
 
   <button type="button" class="btn btn-primary" data-toggle="dropdown">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>السلة<span class="badge badge-pill badge-danger">{{count((array)session('cart'))}} </span>
+    <i class="fa fa-shopping-cart " aria-hidden="true"></i>السلة<span class="badge badge-pill badge-danger">{{count((array)session('cart'))}} </span>
   </button>
   <div class="dropdown-menu">
     <div class="row total-header-section">
@@ -71,7 +71,7 @@
           <p class="card-text">{{$pro['prix']}}دينار جزائري</p>
           <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
            
-            <a href={{'addcart/'.$pro['id']}} class="btn btn-primary shadow-0 me-1">اضافة عنصر للسلة</a>
+            <a href={{'addcart/'.$pro['id']}} class="btn btn-success shadow-0 me-1">اضافة عنصر للسلة</a>
          
 
         
@@ -100,7 +100,7 @@
       
           <input type="hidden" name="amount" value="200">
           <div class="center">
-          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          <button  type="submit" class="btn btn-success shadow-0 me-1"  > شراء </button>
           </div>
          
       </form>
@@ -129,7 +129,7 @@
       
           <input type="hidden" name="amount" value="200">
           <div class="center">
-          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          <button  type="submit" class="btn btn-success shadow-0 me-1"  > شراء </button>
           </div>
          
       </form>
@@ -158,7 +158,7 @@
       
           <input type="hidden" name="amount" value="200">
           <div class="center">
-          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          <button  type="submit" class="btn btn-success shadow-0 me-1"  > شراء </button>
           </div>
          
       </form>
@@ -187,7 +187,7 @@
       
           <input type="hidden" name="amount" value="200">
           <div class="text-center">
-          <button  type="submit" class="btn btn-primary shadow-0 me-1"  > شراء </button>
+          <button  type="submit" class="btn btn-success shadow-0 me-1"  > شراء </button>
           </div>
          
       </form>

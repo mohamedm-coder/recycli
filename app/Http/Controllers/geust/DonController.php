@@ -46,7 +46,6 @@ class DonController extends Controller
     
     
            
-        don::create($requestData);
         
  
         

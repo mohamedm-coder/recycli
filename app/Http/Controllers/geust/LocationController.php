@@ -34,8 +34,6 @@ class LocationController extends Controller
         $google->location = $request->location;
         $google->photo = $uploadedFileUrl;
         $google->save();       
-
-        google::create($requestData);
  
         
         return redirect('google')->with('categories addes succec');

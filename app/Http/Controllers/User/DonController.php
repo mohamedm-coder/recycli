@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\don;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class DonController extends Controller
 {
@@ -29,10 +30,19 @@ class DonController extends Controller
 
         ]);
         $requestData=$request->all();
-        $fileName=time().$request->file('photo')->getClientOriginalName();
-        $path=$request->file('photo')->storeAs('images',$fileName,'public');
-        $requestData['photo']=  '/storage/'.$path;
-        don::create($requestData);
+        $photo = $request->file('photo');
+        $uploadedFileUrl = Cloudinary::upload($photo->getRealPath())->getSecurePath();
+
+        $don = new don;
+        $don->name = $request->name;
+        $don->description = $request->description;
+        $don->photo = $uploadedFileUrl;
+        $don->save();
+     
+
+    
+    
+           
  
         
         return redirect('user/doni')->with('categories addes succec');

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Transporter;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Vehicule;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
+
 
 class AddVehiculeController extends Controller
 {
@@ -21,10 +23,14 @@ class AddVehiculeController extends Controller
     }
     public function addss(Request $request){
         $requestData=$request->all();
-        $fileName=time().$request->file('photo')->getClientOriginalName();
-        $path=$request->file('photo')->storeAs('images',$fileName,'public');
-        $requestData['photo']= '/storage/'.$path;
-        Vehicule::create($requestData);
+        $photo = $request->file('photo');
+        $uploadedFileUrl = Cloudinary::upload($photo->getRealPath())->getSecurePath();
+
+        $Vehicule = new Vehicule;
+        $Vehicule->name = $request->name;
+        $Vehicule->matricule = $request->matricule;
+        $Vehicule->photo = $uploadedFileUrl;
+        $Vehicule->save();
         return redirect('transporter/addvehicule');
         
     }

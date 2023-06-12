@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\google;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class LocationController extends Controller
 {
@@ -23,10 +24,17 @@ class LocationController extends Controller
 
         ]);
         $requestData=$request->all();
-        $fileName=time().$request->file('photo')->getClientOriginalName();
-        $path=$request->file('photo')->storeAs('images',$fileName,'public');
-        $requestData['photo']= '/storage/'.$path;
-        google::create($requestData);
+        $photo = $request->file('photo');
+        $uploadedFileUrl = Cloudinary::upload($photo->getRealPath())->getSecurePath();
+
+        $google = new google;
+        $google->address = $request->address;
+        $google->phone = $request->phone;
+        $google->location = $request->location;
+
+        $google->photo = $uploadedFileUrl;
+        $google->save();
+     
  
         
         return redirect('user/google')->with('categories addes succec');

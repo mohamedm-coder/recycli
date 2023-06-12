@@ -19,7 +19,7 @@
               
                   
             <input type="hidden" name="amount" value="200">
-            <button  type="submit"  class="btn btn-primary shadow-0 me-1" > نقل بواسطة</a></button>
+            <button  type="submit"  class="btn btn-success shadow-0 me-1" > نقل بواسطة</a></button>
                 </form>
                  
                 </div>

@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\product;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
+use Illuminate\Support\Facades\Auth;
+
 
 
 class ProductController extends Controller
@@ -37,9 +39,10 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->prix = $request->prix;
         $product->photo = $uploadedFileUrl;
+        $product->user_id = 1;
         $product->save();
+
      
-        product::create($requestData);
  
         
         return redirect('dash')->with('categories addes succec');

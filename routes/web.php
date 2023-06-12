@@ -23,6 +23,9 @@ Route::get('/team', [App\Http\Controllers\TeamController::class, 'index'])->name
 
 Route::get('dashb',[App\Http\Controllers\TeamController::class,'dashb']);
 Route::get('dash',[App\Http\Controllers\geust\DashController::class,'index']);
+Route::get('panier',[App\Http\Controllers\geust\DashController::class,'panier']);
+
+
 Route::get('product',[App\Http\Controllers\geust\ProductController::class,'index']);
 Route::get('product/sell',[App\Http\Controllers\geust\ProductController::class,'Sell']);
 Route::post('product',[App\Http\Controllers\geust\ProductController::class,'sel']);
@@ -103,9 +106,11 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::get('omal', [App\Http\Controllers\User\TandifController::class, 'omal']);
     Route::post('omalss', [App\Http\Controllers\User\TandifController::class, 'omalss']);
     Route::get('acc', [App\Http\Controllers\User\TandifController::class, 'acc']);
-
-
     Route::get('onee', [App\Http\Controllers\User\TandifController::class, 'onee']);
+    Route::get('wahed',[App\Http\Controllers\User\DashController::class,'wahed']);
+    Route::get('wahed/{pro_id}/edit',[App\Http\Controllers\User\DashController::class,'edit']);
+    Route::get('delete/{id}',[App\Http\Controllers\User\DashController::class,'delete']);
+
 
   
 

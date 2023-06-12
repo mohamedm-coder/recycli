@@ -5,6 +5,10 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\product;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
+use Illuminate\Support\Facades\Auth;
+
+
 
 class ProductController extends Controller
 {
@@ -23,18 +27,24 @@ class ProductController extends Controller
             'description' =>'required',
             'photo' =>'required',
             'prix' =>'required',
+        
             
 
         ]);
         $requestData=$request->all();
-        $fileName=time().$request->file('photo')->getClientOriginalName();
-        $path=$request->file('photo')->storeAs('images',$fileName,'public');
-        $requestData['photo']= '/storage/'.$path;
-        product::create($requestData);
- 
-        
-        return redirect('user/dash')->with('categories addes succec');
+        $photo = $request->file('photo');
+        $uploadedFileUrl = Cloudinary::upload($photo->getRealPath())->getSecurePath();
+
+        $product = new product;
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->prix = $request->prix;
+        $product->photo = $uploadedFileUrl;
+        $product->user_id = Auth::user()->id;
+        $product->save();
+        return  redirect('user/wahed')->with('success','تم اضافة  عنصرك الى السلة ');
     
+       
 
       
     }
@@ -62,6 +72,7 @@ public function addcart($id){
             'description' =>$product->description,
             'photo' =>$product->photo,
             'prix' =>$product->prix,
+            
 
         ];
     }
