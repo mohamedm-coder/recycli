@@ -9,6 +9,7 @@ use App\Models\google;
 use App\Models\don;
 use App\Models\product;
 use App\Models\kidma;
+use App\Models\yad;
 
 class AddUserController extends Controller
 {
@@ -75,7 +76,18 @@ class AddUserController extends Controller
                     return redirect('admin/kidma');
                 
                    }
-                 
+                   public function yd()
+                   {
+                           $data=yad::all();
+                           return view('admin.ch',['yad'=>$data]);
+                       
+                          }
+                          public function deleteeeee($id){
+                            $data=yad::find($id);
+                            $data->delete();
+                            return redirect('admin/yd');
+                        
+                           }
            
            
 }

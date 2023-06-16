@@ -56,12 +56,12 @@
             <th>تفاصيل</th>
             <th>حذف</th>
         </tr>
-        @foreach ($kidmas as $pro)
+        @foreach ($yad as $pro)
         <tr>
             <td>{{$pro['phone']}}</td>
             <td>{{$pro['address']}}</td>
             <td>{{$pro['location']}}</td>
-            <td><a href={{'deleteeee/'.$pro['id']}}>حذف</a></td>
+            <td><a href={{'deleteeeee/'.$pro['id']}}>حذف</a></td>
         </tr>
         @endforeach
     </table>

@@ -28,6 +28,10 @@ class DashController extends Controller
            }
            public function edit(Product $product)
            {
+            $product->setName("New Product Name");
+            $product->setPhoto("New photo");
+            $product->setPrix("New prix");
+            $product->setDescription("New description");
             return $product;
            }
            public function delete($id){
@@ -36,5 +40,6 @@ class DashController extends Controller
             return redirect('user/wahed');
         
          }
+        
     }
 

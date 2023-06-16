@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="{{url('user/dash')}}">
+        <a class="nav-link" href="{{url('user/onee')}}">
           <i class="mdi mdi-home menu-icon  w3-text-green"></i>
           <span class="menu-title">الصفحة الرئيسية</span>
         </a>

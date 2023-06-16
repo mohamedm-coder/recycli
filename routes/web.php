@@ -23,7 +23,6 @@ Route::get('/team', [App\Http\Controllers\TeamController::class, 'index'])->name
 
 Route::get('dashb',[App\Http\Controllers\TeamController::class,'dashb']);
 Route::get('dash',[App\Http\Controllers\geust\DashController::class,'index']);
-Route::get('panier',[App\Http\Controllers\geust\DashController::class,'panier']);
 
 
 Route::get('product',[App\Http\Controllers\geust\ProductController::class,'index']);
@@ -76,8 +75,11 @@ Route::prefix('admin')->middleware(['auth','isAdmin']) ->group(function() {
     Route::get('deleteee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deleteee']);
     Route::get('deleteeee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deleteeee']);
     Route::get('product',[App\Http\Controllers\Admin\AddUserController::class,'pro']);
-    
+    Route::get('deleteeeee/{id}',[App\Http\Controllers\Admin\AddUserController::class,'deleteeeee']);
+
     Route::get('kidma',[App\Http\Controllers\Admin\AddUserController::class,'kdm']);
+    Route::get('yd',[App\Http\Controllers\Admin\AddUserController::class,'yd']);
+
  
    
    
@@ -110,6 +112,10 @@ Route::prefix('user')->middleware(['auth','isUser']) ->group(function() {
     Route::get('wahed',[App\Http\Controllers\User\DashController::class,'wahed']);
     Route::get('wahed/{pro_id}/edit',[App\Http\Controllers\User\DashController::class,'edit']);
     Route::get('delete/{id}',[App\Http\Controllers\User\DashController::class,'delete']);
+    Route::get('yad',[App\Http\Controllers\User\AddVehiculeController::class,'yad']);
+    Route::post('yads',[App\Http\Controllers\User\AddVehiculeController::class,'yads']);
+
+
 
 
   

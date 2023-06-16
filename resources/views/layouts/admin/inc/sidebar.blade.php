@@ -60,9 +60,9 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="documentation/documentation.html">
+        <a class="nav-link" href="{{url('admin/yd')}}">
           <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-          <span class="menu-title">الصفحات</span>
+          <span class="menu-title">طلبات الشراء</span>
         </a>
       </li>
     </ul>

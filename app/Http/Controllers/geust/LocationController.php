@@ -36,8 +36,8 @@ class LocationController extends Controller
         $google->save();       
  
         
-        return redirect('google')->with('categories addes succec');
-    
+
+        return redirect()->back()->with('success', 'تمت إضافة الموقع بنجاح!');    
 
       
     }

@@ -25,7 +25,7 @@
         
       <div class="w3-third">
         <div class="w3-card w3-container" style="min-height:360px">             
-          <h3>خدمة البيع و الشراء</h3><br>
+          <h3>خدمة النقل</h3><br>
           <i class="	fa fa-taxi w3-margin-bottom w3-text-green" style="font-size:120px"></i>
               <p>معنا يمكنك الاستفادة من خدمة النقل بضغطة واحدة و بكل سهولة .</p>
               

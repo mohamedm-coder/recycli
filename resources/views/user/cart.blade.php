@@ -51,6 +51,14 @@ h1 {
   align-items: center;
   height: 5%;
 }
+.containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+margin-top: 5px;
+
+}
 
 input,
 button {
@@ -67,7 +75,6 @@ button {
   background-color: #28c743; /* لون خلفية الزر */
   color: #000000; /* لون النص في الزر */
   font-size: 20px; /* حجم الخط في الزر */
-  text-decoration: none
 }
 
 button:hover,
@@ -488,10 +495,17 @@ aside {
 
   <input type="hidden" name="amount" value="200">
   <div class="container">
-  <button  type="submit" class="btn" > شراء </button>
-  </div>
+  <button  type="submit" class="btn" > دفع الكتروني</button>
+</div>
+
+ 
+
+
  
 </form>
+<div class="containerr">
+ <a href="{{url('user/yad')}}"> <button   type="submit" class="btn" > دفع يد بيد</button></a>
+  </div>
    
 </div>
 
