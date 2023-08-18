@@ -21,7 +21,7 @@
         <p>نوفر عليك الجهد و الوقت </p>
       
    
-      <a href="{{url('transporte/adds')}}" class="w3-button  w3-green">اضافة</a>
+      <a href="{{url('transporter/adds')}}" class="w3-button  w3-green">اضافة</a>
         </div>
       </div>
 
@@ -33,7 +33,7 @@
         <p>نوفر عليك الجهد و الوقت </p>
       
    
-      <a href="{{url('transporte/addvehicule')}}" class="w3-button  w3-green">عرض السيارات</a>
+      <a href="{{url('transporter/addvehicule')}}" class="w3-button  w3-green">عرض السيارات</a>
         </div>
       </div>
     </div>

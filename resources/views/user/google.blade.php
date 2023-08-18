@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg1evvc68xACuU2RsbBiV5uoF0vwVNM8Y"></script>
+
    
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <style type="text/css">
@@ -70,7 +72,7 @@ input[type=submit]:hover {
        
         
         <h1>بلاغ عن موقع يحتوي على نفايات</h1>
-        <form action= "{{url('user/gen')}}"  method="POST" enctype="multipart/form-data">
+        <form action= "{{url('gen')}}"  method="POST" enctype="multipart/form-data">
           @csrf
           <label for="location">المكان:</label><br>
           <input type="text" id="location" name="location"><br>
@@ -85,32 +87,46 @@ input[type=submit]:hover {
           <input type="tel" id="phone" name="phone"><br><br>
     
           <input type="submit" value="إرسال"    >
+          <h1>الابلاغ عن موقع </h1>
+          <div id="map"></div>
+      
+          <script>
+              function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                      center: {lat: 35.0902, lng: 8.7129},
+                      zoom: 4
+                  });
+      
+                  var marker;
+      
+                  // Add click event listener to the map
+                  map.addListener('click', function(event) {
+                      // Clear previous marker, if any
+                      if (marker) {
+                          marker.setMap(null);
+                      }
+      
+                      // Create a new marker at the clicked location
+                      marker = new google.maps.Marker({
+                          position: event.latLng,
+                          map: map
+                      });
+      
+                      // Update the input field with the latitude and longitude
+                      document.getElementById('latitude').value = event.latLng.lat();
+                      document.getElementById('longitude').value = event.latLng.lng();
+                  });
+              }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg1evvc68xACuU2RsbBiV5uoF0vwVNM8Y&callback=initMap" async defer></script>
         </form>
       
     </div>
   
-    <script type="text/javascript">
-        function initMap() {
-          const myLatLng = { lat: 35.414249, lng: 8.101092 };
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 5,
-            center: myLatLng,
-          });
-  
-          new google.maps.Marker({
-            position: myLatLng,
-            map,
-            title: "مرحبا رسكلي!",
-          });
-          
-        }
-  
-        window.initMap = initMap; 
-    </script>
+ 
   
     
-  <script type="text/javascript"
-  src="https://maps.google.com/maps/api/js?key=AIzaSyDg1evvc68xACuU2RsbBiV5uoF0vwVNM8Y&callback=initMap" ></script>
+
   
 </body>
 </html>
